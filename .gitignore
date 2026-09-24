@@ -1,0 +1,22 @@
+# Generated caches and plugin/runtime downloads
+**/.cache/
+**/cache/
+**/node_modules/
+**/.git/
+**/lazy/
+**/mason/
+**/site/pack/
+
+# Editor and OS noise
+**/*.swp
+**/*.swo
+**/*~
+.DS_Store
+
+# Never track sensitive material
+**/*token*
+**/*secret*
+**/*credential*
+**/*.pem
+**/*.key
+**/known_hosts

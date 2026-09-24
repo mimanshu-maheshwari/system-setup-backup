@@ -1,0 +1,81 @@
+# Font
+# font-family = "SauceCodePro NFM"
+# font-family = "Hasklug Nerd Font Mono"
+# font-family = "Monofur Nerd Font Mono"
+font-family = "SpaceMono Nerd Font Mono"
+font-family-bold = "SpaceMono Nerd Font Mono, Bold"
+font-family-italic = "SpaceMono Nerd Font Mono, Italic"
+font-family-bold-italic = "SpaceMono Nerd Font Mono, Bold Italic"
+
+font-size = 13.5
+
+# Startup size
+# maximize = true
+# fullscreen = true
+window-width = 190
+window-height = 46
+
+
+# UI polish
+resize-overlay = always
+scrollback-limit = 10000000
+scrollbar = never
+
+quick-terminal-position = right
+
+# Linux / GTK
+gtk-single-instance = desktop
+gtk-titlebar = true
+
+# Window
+window-decoration = none
+# none auto server client
+# window-theme = ghostty
+
+
+window-position-x = 0
+window-position-y = 0
+
+# Theme
+# theme = "dark:Ollie,light:Catppuccin Latte"
+theme = "dark:Grey Green,light:Catppuccin Latte"
+
+# Background
+background-opacity = 0.80
+background-blur = 10
+background-opacity-cells = true
+
+window-subtitle = working-directory
+
+# Padding
+window-padding-x = 6
+window-padding-y = 6
+window-padding-balance = true
+window-padding-color = extend-always
+
+
+
+# Shell integration
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Font features
+font-feature = +liga
+font-feature = +calt
+
+# Split visuals
+unfocused-split-opacity = 0.82
+split-divider-color = #765478
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = true
+cursor-color = cell-foreground
+cursor-opacity = 1
+
+# Contrast
+minimum-contrast = 1.2
+
+# Extra keybindings
+config-file = "tmux-binding.ghostty"
+config-file = "vim-mode.ghostty"

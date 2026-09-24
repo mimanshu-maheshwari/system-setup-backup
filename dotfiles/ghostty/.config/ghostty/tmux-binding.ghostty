@@ -1,0 +1,101 @@
+keybind = ctrl+b=activate_key_table:tmux
+keybind = tmux/
+
+# ------------------------------------------------------------
+# tmux table: tabs
+# These run once, then leave tmux mode
+# ------------------------------------------------------------
+
+keybind = tmux/c=new_tab
+keybind = chain=deactivate_key_table
+
+keybind = tmux/n=next_tab
+keybind = chain=deactivate_key_table
+
+keybind = tmux/p=previous_tab
+keybind = chain=deactivate_key_table
+
+keybind = tmux/0=goto_tab:1
+keybind = chain=deactivate_key_table
+
+keybind = tmux/1=goto_tab:2
+keybind = chain=deactivate_key_table
+
+keybind = tmux/2=goto_tab:3
+keybind = chain=deactivate_key_table
+
+keybind = tmux/3=goto_tab:4
+keybind = chain=deactivate_key_table
+
+keybind = tmux/4=goto_tab:5
+keybind = chain=deactivate_key_table
+
+keybind = tmux/5=goto_tab:6
+keybind = chain=deactivate_key_table
+
+keybind = tmux/6=goto_tab:7
+keybind = chain=deactivate_key_table
+
+keybind = tmux/7=goto_tab:8
+keybind = chain=deactivate_key_table
+
+keybind = tmux/8=goto_tab:9
+keybind = chain=deactivate_key_table
+
+keybind = tmux/9=goto_tab:10
+keybind = chain=deactivate_key_table
+
+# ------------------------------------------------------------
+# tmux table: splits
+# These run once, then leave tmux mode
+# ------------------------------------------------------------
+
+keybind = tmux/shift+5=new_split:right
+keybind = chain=deactivate_key_table
+
+keybind = tmux/shift+apostrophe=new_split:down
+keybind = chain=deactivate_key_table
+
+keybind = tmux/h=goto_split:left
+keybind = chain=deactivate_key_table
+
+keybind = tmux/j=goto_split:down
+keybind = chain=deactivate_key_table
+
+keybind = tmux/k=goto_split:up
+keybind = chain=deactivate_key_table
+
+keybind = tmux/l=goto_split:right
+keybind = chain=deactivate_key_table
+
+keybind = tmux/z=toggle_split_zoom
+keybind = chain=deactivate_key_table
+
+keybind = tmux/x=close_surface
+keybind = chain=deactivate_key_table
+
+# ------------------------------------------------------------
+# tmux table: resize mode
+# These DO NOT deactivate the table.
+# Press Ctrl+b once, then press Alt+Arrow repeatedly.
+# ------------------------------------------------------------
+
+keybind = tmux/alt+left=resize_split:left,20
+keybind = tmux/alt+right=resize_split:right,20
+keybind = tmux/alt+up=resize_split:up,20
+keybind = tmux/alt+down=resize_split:down,20
+
+
+# ------------------------------------------------------------
+# Enter Ghostty Vim scroll mode
+# tmux-style: Ctrl+b [
+# ------------------------------------------------------------
+
+keybind = tmux/[=activate_key_table:vim
+
+# ------------------------------------------------------------
+# Exit tmux mode
+# ------------------------------------------------------------
+
+keybind = tmux/escape=deactivate_key_table
+keybind = tmux/q=deactivate_key_table

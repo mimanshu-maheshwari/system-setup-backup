@@ -1,0 +1,18 @@
+import = [ "./themes/base16-alacritty/colors/base16-atelier-forest.toml"]
+
+[font]
+# normal = { family = "SpaceMono Nerd Font Mono", style = "Regular" }
+normal = { family = "Sauce Code Pro Nerd Font Mono", style = "Regular" }
+size   = 12.0
+
+[shell]
+program = "/usr/bin/tmux"
+args    = ["new-session", "-A", "-D", "-s", "default"]
+
+[window]
+decorations     = "None"
+opacity         = 0.80
+blur  	        = false
+dynamic_padding = true
+startup_mode    = "Maximized"
+dynamic_title   = true

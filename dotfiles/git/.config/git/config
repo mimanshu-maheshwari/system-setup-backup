@@ -1,0 +1,17 @@
+[color]
+    ui = true
+[core]
+    autocrlf = input
+    safecrlf = true
+    editor = vim
+[alias]
+    c = commit
+    s = status
+    st = status
+    lg = log --oneline --decorate --graph
+    pl = pull --prune
+    ft = fetch --prune
+[pull]
+    ff = only
+[init]
+    defaultBranch = main
