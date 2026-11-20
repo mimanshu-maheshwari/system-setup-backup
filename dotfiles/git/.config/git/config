@@ -1,9 +1,22 @@
+[user]
+    name = Mimanshu Maheshwari
+    email = 
+
+[includeIf "gitdir:/projects/work/"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:/projects/mm/"]
+  path = ~/.gitconfig-personal
+
 [color]
     ui = true
+
 [core]
-    autocrlf = input
-    safecrlf = true
-    editor = vim
+  autocrlf = false
+  safecrlf = true
+  editor = vim
+  eol = lf
+
 [alias]
     c = commit
     s = status
@@ -11,7 +24,15 @@
     lg = log --oneline --decorate --graph
     pl = pull --prune
     ft = fetch --prune
+
 [pull]
     ff = only
+
 [init]
     defaultBranch = main
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
